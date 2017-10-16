@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){   //inside document after it is ready, call function
-                $("p").click(function(){    //inside <p> </p> upon click do function
+                $("span").click(function(){    //inside <p> </p> upon click do function
                     $(this).clickMe();         //inside the current (text inside <p> in this case) call function hide, hiding it from user
                 });                         // over all, after document is ready, if you click what is inside <p>, hide it from user
             });
@@ -21,7 +21,7 @@
 <body>
   
   	<h1>Event counts</h1>
-    <p id="clicked"></p>
+    <p>Try clicking me, <span id="clicked">Times clicked: 0</span></p>
 	<div id="launched"></div>
 	<div id="paused"></div>
 	<div id="resumed"></div>

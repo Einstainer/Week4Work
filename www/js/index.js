@@ -23,7 +23,7 @@ function updateDisplay() {
 	document.addEventListener("pause", onPause, false);
 	
 	launched_count++;
-    click_count = window.localStorage.getItem("click_count");
+    click_count = window.localStorage.getItem("clicker");
 	updateDisplay();
 	    
 	alert("device ready");
@@ -33,9 +33,9 @@ function updateDisplay() {
     
     function clickMe()
     {
-        click_count = window.localStorage.getItem("clicker")
         click_count++;
         windows.localStorage.setItem("clicker", click_count);
+        updateDisplay();
     }
 
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Lifecycle Test</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script src="jquery-mobile/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="jquery-mobile/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="js/index.js"type="text/javascript" charset="utf-8"></script>
+	<link href="jquery-mobile/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){   //inside document after it is ready, call function
+                $("p").click(function(){    //inside <p> </p> upon click do function
+                    $(this).clickMe();         //inside the current (text inside <p> in this case) call function hide, hiding it from user
+                });                         // over all, after document is ready, if you click what is inside <p>, hide it from user
+            });
+        </script>
+</head>
+
+<body>
+  
+  	<h1>Event counts</h1>
+    <p id="clicked"></p>
+	<div id="launched"></div>
+	<div id="paused"></div>
+	<div id="resumed"></div>
+
+</body>
+</html>

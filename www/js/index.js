@@ -23,13 +23,12 @@ function updateDisplay() {
 	document.addEventListener("pause", onPause, false);
 	
 	launched_count++;
+    click_count = window.localStorage.getItem("click_count");
 	updateDisplay();
 	    
 	alert("device ready");
         
         
-        
-        click_count = window.localStorage.getItem("click_count");
     }
     
     function clickMe()

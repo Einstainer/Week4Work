@@ -1,7 +1,7 @@
 var paused_count =0;
 var resumed_count = 0;
 var launched_count = 0;
-var click_count;
+var click_count = window.localStorage.getItem("click_count");
 
 document.addEventListener("deviceready", onDeviceReady, false);
 		

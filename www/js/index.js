@@ -33,7 +33,7 @@ function updateDisplay() {
     function clickMe()
     {
         click_count++;
-        windows.localStorage.setItem("clicker", click_count);
+        window.localStorage.setItem("clicker", click_count);
         updateDisplay();
     }
 
